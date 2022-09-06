@@ -61,6 +61,10 @@ This file will be updated on a daily basis and will include any information that
   - Introduction to Spring Boot (page 1 and 2)
   - Spring Boot Development (page 3 and 4)
 
+### DI Demo
+
+- The demo code is available under **demo-di3** project in the repo
+
 ### Spring tutorial resources
 
 - [Spring Boot tutorial from Baeldung](https://www.baeldung.com/spring-boot)
