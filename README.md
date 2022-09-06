@@ -13,9 +13,9 @@ This file will be updated on a daily basis and will include any information that
 - Instructor (Sang Shin) introduction
   - You can contact me at any time (before and after class included) via email
   - Email: <sangshinpassion@gmail.com>
-  - Individual ~30 minutes tutoring is available upon request
-
-- [Individual tutoring signing sheet](https://docs.google.com/document/d/1ZC7L3Zd1LXeG40vW3fA0k4TRCLETNHrWI13BPLt2z74/edit)
+  
+- Individual ~30 minutes tutoring is available upon request
+  - [Individual tutoring signing sheet](https://docs.google.com/document/d/1ZC7L3Zd1LXeG40vW3fA0k4TRCLETNHrWI13BPLt2z74/edit)
 
 - Student introduction
   - Your Java experience
@@ -30,8 +30,8 @@ This file will be updated on a daily basis and will include any information that
 
 ### Daily schedule 
   
-- 9:00AM - 1:00PM EST (New York time)
-- 10 minutes break every hour
+- 9:00AM - 1:00PM ET (New York time)
+- 10 minutes break every hour (10:00AM, 11:00AM, 12:00AM ET)
 
 ## Day 1
 
