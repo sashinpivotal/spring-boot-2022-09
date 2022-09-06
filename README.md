@@ -14,13 +14,17 @@ This file will be updated on a daily basis and will include any information that
   - You can contact me at any time (before and after class included) via email
   - Email: <sangshinpassion@gmail.com>
   
-- Individual ~30 minutes tutoring is available upon request
+- Individual ~30 minutes tutoring session is available upon request (during 1 hour period before the class)
   - [Individual tutoring signing sheet](https://docs.google.com/document/d/1ZC7L3Zd1LXeG40vW3fA0k4TRCLETNHrWI13BPLt2z74/edit)
+  
+- Course topics
+  - slide 2 and 3 (Spring_Boot_Slides.pdf)
 
 - Student introduction
   - Your Java experience
   - Your Spring/Spring-Boot experience (if you have anay)
   - Your goals in taking this class
+  - Any thoughts/suggestions on course topics
 
 ### Course material and Tools needed
 
