@@ -51,15 +51,15 @@ This file will be updated on a daily basis and will include any information that
 
 ## Day 1
 
-### Topics/Labs we we are going to cover today (Day 1)
+### Topics/Labs 
 
-- Topics (Spring_Boot_Slides.pdf)
-  - Introduction to Spring Boot
-  - Spring Boot Development
-
-- Labs (spring_boot_exercise_instructions.pdf)
-  - Introduction to Spring Boot (page 1 and 2)
-  - Spring Boot Development (page 3 and 4)
+- Introduction to Spring Boot 
+  - slides: pages of 8-43 of Spring_Boot_Slides.pdf
+  - lab: page 1-2 of spring_boot_exercise_instructions.pdf
+  
+- Spring Boot Development
+  - slides: pages of 44-65 of Spring_Boot_Slides.pdf
+  - lab: page 3-4 of spring_boot_exercise_instructions.pdf
 
 ### DI Demo
 
@@ -71,3 +71,10 @@ This file will be updated on a daily basis and will include any information that
 - [Spring guides](https://spring.io/guides)
 
 
+## Day 2
+
+### Topics/Labs 
+
+- Beans and Configuration
+  - slides: pages of 66-99 of Spring_Boot_Slides.pdf
+  - lab: page 5-8 of spring_boot_exercise_instructions.pdf
