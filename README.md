@@ -36,6 +36,7 @@ This file will be updated on a daily basis and will include any information that
   
 - 9:00AM - 1:00PM ET (New York time)
 - 10 minutes break every hour (10:00AM, 11:00AM, 12:00AM ET)
+- [Microsoft Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2RhMmJhNjEtODE4Mi00N2IzLWJhNGYtYTZlNTljZTkzMTQx%40thread.v2/0?context=%7b%22Tid%22%3a%2292e84ceb-fbfd-47ab-be52-080c6b87953f%22%2c%22Oid%22%3a%22aaf6d74b-873f-4c59-a645-7d3cd2a2bee9%22%7d)
 
 ## Day 1
 
