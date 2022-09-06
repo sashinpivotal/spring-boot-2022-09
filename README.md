@@ -18,7 +18,8 @@ This file will be updated on a daily basis and will include any information that
   - [Individual tutoring signing sheet](https://docs.google.com/document/d/1ZC7L3Zd1LXeG40vW3fA0k4TRCLETNHrWI13BPLt2z74/edit)
   
 - Course topics
-  - slide 2 and 3 (Spring_Boot_Slides.pdf)
+  - Core topics (slide 2 and 3  of Spring_Boot_Slides.pdf)
+  - Auxiliary topics (slide 4 and 5 of Spring_Boot_Slides.pdf)
 
 - Student introduction
   - Your Java experience
