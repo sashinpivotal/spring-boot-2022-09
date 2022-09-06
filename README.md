@@ -73,6 +73,14 @@ This file will be updated on a daily basis and will include any information that
 
 ## Day 2
 
+### Quiz 
+
+- What is dependency injection?  Why dependency injection?
+- What is the Spring boot starter to make your app a Web application?
+- The **@SpringBootApplication** is a composite annotation.
+  What is that made of?
+- What is the difference between **mvn** and **mvnw**?
+
 ### Topics/Labs 
 
 - Beans and Configuration
