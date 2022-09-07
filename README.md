@@ -70,6 +70,34 @@ This file will be updated on a daily basis and will include any information that
 - [Spring Boot tutorial from Baeldung](https://www.baeldung.com/spring-boot)
 - [Spring guides](https://spring.io/guides)
 
+### IntelliJ shortcut keys
+
+- Keyboard shortcut keys for IntelliJ (Mac)
+
+```
+- CMD+N (Generate)
+- ALT+Return (Quick fix)
+- CMD+SHIFT+Return (Complete current statement)
+- CMD+ALT+V (extract return value into a local variable)
+- CTRL+SHIFT+R (run the app/test)
+- CTRL+R(rerun the app/test)
+- CMD+SHIFT+F12 (maximize/minimize editor window)
+- CMD+SHIFT+' (Maximize/minimize tool window)
+- CMD+SHIFT+T (go to target/test code)
+- CMD+Left (navigate back)
+- CMD+Right (navigate forward)
+- CMD+O (find class)
+- CMD+SHIFT+O (find file)
+- Double SHIFT (global search)
+- F2, SHIFT+F2 (Go to next/previous error)
+```
+
+- Keyboard shortcut keys for IntelliJ (Windows)
+
+```
+I could not locate Windows version :-) If you can share what you found, that will be great.
+```
+
 
 ## Day 2
 
