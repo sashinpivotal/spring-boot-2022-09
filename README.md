@@ -75,7 +75,7 @@ This file will be updated on a daily basis and will include any information that
 - Keyboard shortcut keys for IntelliJ (Mac)
 
 ```
-- CMD+N (Generate)
+- CMD+N (Context-sensitive Generate)
 - ALT+Return (Quick fix)
 - CMD+SHIFT+Return (Complete current statement)
 - CMD+ALT+V (extract return value into a local variable)
@@ -98,6 +98,7 @@ This file will be updated on a daily basis and will include any information that
 I could not locate Windows version :-) If you can share what you found, that will be great.
 ```
 
+- For complete IntelliJ shortcut keys, please see [here](https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html) 
 
 ## Day 2
 
@@ -111,11 +112,49 @@ I could not locate Windows version :-) If you can share what you found, that wil
 
 ### Topics/Labs of Day 2
 
-- Beans and Configuration
+- Beans and Configuration (Just presentation only)
   - slides: pages of 66-99 of Spring_Boot_Slides.pdf
   - lab: page 5-8 of spring_boot_exercise_instructions.pdf
 
+### Misc. questions
+
+1. Is there a way to intercept bean creation process and inspect it?
+
+You can implement your own BeanPostProcessor bean, which gets called after each bean gets created, as following:
+
+```
+   @Component
+public class MyBeanPostProcessor implements BeanPostProcessor {
+
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+
+    @Nullable
+    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+        logger.info("---> before " + bean.getClass());
+        return bean;
+    }
+
+    @Nullable
+    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+        logger.info("---> after");
+        return bean;
+    }
+   }
+```
+  
 ## Day 3
+
+### Quiz on Day 2 topics
+
+- What are the two schemes of defining Spring Beans?
+- What is the @Configuration annotation for?
+- What is @Autowired annotation for?
+  
+### Topics/Labs of Day 3
+
+- Beans and Configuration (We will do the lab)
+  - slides: pages of 66-99 of Spring_Boot_Slides.pdf
+  - lab: page 5-8 of spring_boot_exercise_instructions.pdf
 
 - Additional Techniques (profile, actuator)
   - slides: pages of 107-136 of Spring_Boot_Slides.pdf
