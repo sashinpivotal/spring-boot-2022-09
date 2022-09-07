@@ -73,7 +73,7 @@ This file will be updated on a daily basis and will include any information that
 
 ## Day 2
 
-### Quiz 
+### Quiz on Day 1 topics
 
 - What is dependency injection?  Why dependency injection?
 - What is the Spring boot starter to make your app a Web application?
@@ -81,8 +81,12 @@ This file will be updated on a daily basis and will include any information that
   What is that made of?
 - What is the difference between **mvn** and **mvnw**?
 
-### Topics/Labs 
+### Topics/Labs of Day 2
 
 - Beans and Configuration
+  - slides: pages of 66-99 of Spring_Boot_Slides.pdf
+  - lab: page 5-8 of spring_boot_exercise_instructions.pdf
+
+- Additional Techniques (profile, actuator)
   - slides: pages of 66-99 of Spring_Boot_Slides.pdf
   - lab: page 5-8 of spring_boot_exercise_instructions.pdf
