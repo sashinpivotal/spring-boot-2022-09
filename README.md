@@ -41,11 +41,11 @@ This file will be updated on a daily basis and will include any information that
 - [Daily attendance sign-up](https://netorgft4394772-my.sharepoint.com/:x:/g/personal/cc_en-lighten_io/EQmgmw5zAvFKn2qeteGkZHQB9Mzc-3d4Ad6RFYS3VjL0SA?e=5goLIW)
 
 
-## Non-core topics that might be covered depending on time
+## Non-core topics that might or might not be covered depending on time
 
 - NoSQL
 - TDD
-- Spring Boot features for the cloud
+- Spring Boot deployment to the cloud
 - Kafka
 - Spring distributed transaction
 
@@ -88,5 +88,5 @@ This file will be updated on a daily basis and will include any information that
   - lab: page 5-8 of spring_boot_exercise_instructions.pdf
 
 - Additional Techniques (profile, actuator)
-  - slides: pages of 66-99 of Spring_Boot_Slides.pdf
-  - lab: page 5-8 of spring_boot_exercise_instructions.pdf
+  - slides: pages of 107-136 of Spring_Boot_Slides.pdf
+  - lab: page 9-10 of spring_boot_exercise_instructions.pdf
