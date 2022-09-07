@@ -87,6 +87,8 @@ This file will be updated on a daily basis and will include any information that
   - slides: pages of 66-99 of Spring_Boot_Slides.pdf
   - lab: page 5-8 of spring_boot_exercise_instructions.pdf
 
+## Day 3
+
 - Additional Techniques (profile, actuator)
   - slides: pages of 107-136 of Spring_Boot_Slides.pdf
   - lab: page 9-10 of spring_boot_exercise_instructions.pdf
