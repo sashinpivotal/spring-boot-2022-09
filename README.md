@@ -141,6 +141,29 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
     }
    }
 ```
+
+1. What are the pros and cons of the two schemes of defining Spring Beans?
+   
+- Using @Configuration and @Bean methods: Pros
+  - Single logical location for Spring bean configuration, provides easier maintenance of bean configuration
+  - You can define beans from 3rd party library classes you do not have source code
+  - You can customize Bean properties inside the @Bean method
+
+- Using @Configuration and @Bean methods: Cons
+  - Extra coding 
+
+- Using component-scanning annotated classes: Pros
+  - Simple to use 
+  - Existence of stereo types: @Controller, @Service, @Repository
+
+- Using component-scanning annotated classes: Cons
+  - Could pose maintenance problem for large apps
+  - Cannot be used in 3rd party library classes without source code
+  - Violation of simple responsibility principle
+
+- Recommendation
+  - Use "component-scanning annotated classes" scheme for use cases where the usage of stereo types make sense
+  - Use "@Configuration and @Bean methods" for the rest of the app
   
 ## Day 3
 
@@ -149,7 +172,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 - What are the two schemes of defining Spring Beans?
 - What is @Autowired annotation for?
 - What is the @Configuration annotation for?
-- How do you specify the dependency relationship between bean definitions 
+- How do you specify the dependency relationship between bean definitions in the configuration class?
 
   
 ### Topics/Labs of Day 3
