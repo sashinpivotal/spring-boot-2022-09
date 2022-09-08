@@ -142,7 +142,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
    }
 ```
 
-1. What are the pros and cons of the two schemes of defining Spring Beans?
+2. What are the pros and cons of the two schemes of defining Spring Beans?
    
 - Using @Configuration and @Bean methods: Pros
   - Single logical location for Spring bean configuration, provides easier maintenance of bean configuration
