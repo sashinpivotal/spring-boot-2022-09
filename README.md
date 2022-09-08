@@ -184,7 +184,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 public CommandLineRunner commandLineRunner(
   @Qualifier("bankService1") BankService bankService1,
   @Qualifier("bankService2") BankService bankService2) {
-    
+
   return args -> {
     bankService1.depositIntoAccount(1, 20.0);
     bankService2.depositIntoAccount(1, 30.0);
@@ -199,3 +199,8 @@ public CommandLineRunner commandLineRunner(
 - Additional Techniques (profile, actuator)
   - slides: pages of 107-136 of Spring_Boot_Slides.pdf
   - lab: page 9-10 of spring_boot_exercise_instructions.pdf
+
+
+# Day 7 (or Day 8) project
+
+- [project](./spring_project.pdf)
