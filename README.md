@@ -181,8 +181,10 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 
 ```
 @Bean
-public CommandLineRunner commandLineRunner(@Qualifier("bankService1") BankService bankService1,
-                        @Qualifier("bankService2") BankService bankService2) {
+public CommandLineRunner commandLineRunner(
+  @Qualifier("bankService1") BankService bankService1,
+  @Qualifier("bankService2") BankService bankService2) {
+    
   return args -> {
     bankService1.depositIntoAccount(1, 20.0);
     bankService2.depositIntoAccount(1, 30.0);
