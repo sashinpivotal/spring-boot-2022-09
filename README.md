@@ -203,4 +203,8 @@ public CommandLineRunner commandLineRunner(
 
 # Day 7 (or Day 8) project
 
+Please work on the following project.
+
 - [project](./spring_project.pdf)
+
+- Make sure you do unit testing (using **MockMvc**) and integration testing (using **TestRestTemplate**) on the controller layer
