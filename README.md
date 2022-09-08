@@ -177,7 +177,18 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
   
 ### Topics/Labs of Day 3
 
-- CommandLineRunner bean (this is not covered in the course contents)
+- CommandLineRunner bean (this is not covered in the course contents) - Example code
+
+```
+	@Bean
+	public CommandLineRunner commandLineRunner(@Qualifier("bankService1") BankService bankService1,
+											   @Qualifier("bankService2") BankService bankService2) {
+		return args -> {
+			bankService1.depositIntoAccount(1, 20.0);
+			bankService2.depositIntoAccount(1, 30.0);
+		};
+	}
+```
 
 - Beans and Configuration (We will do the lab)
   - slides: pages of 66-99 of Spring_Boot_Slides.pdf
