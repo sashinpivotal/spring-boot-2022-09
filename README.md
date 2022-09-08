@@ -177,6 +177,8 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
   
 ### Topics/Labs of Day 3
 
+- CommandLineRunner bean (this is not covered in the course contents)
+
 - Beans and Configuration (We will do the lab)
   - slides: pages of 66-99 of Spring_Boot_Slides.pdf
   - lab: page 5-8 of spring_boot_exercise_instructions.pdf
