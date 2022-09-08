@@ -147,8 +147,10 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 ### Quiz on Day 2 topics
 
 - What are the two schemes of defining Spring Beans?
-- What is the @Configuration annotation for?
 - What is @Autowired annotation for?
+- What is the @Configuration annotation for?
+- How do you specify the dependency relationship between bean definitions 
+
   
 ### Topics/Labs of Day 3
 
