@@ -1,7 +1,16 @@
-## Extra Actuator lab
+## Actuator lab
 
 You can start with any Web application of your choice.
 In the instruction below, **demo-spring-boot-actuator** is used.
+
+### Make sure spring-boot-starter-actuator dependency is added to the pom.xml
+
+```
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+```
 
 ### Get build information
 
@@ -42,7 +51,7 @@ In the instruction below, **demo-spring-boot-actuator** is used.
 
 - Add **HelloController.java**
 
-```
+```java
 package demo.springbootactuator;
 
 import org.slf4j.Logger;
@@ -100,7 +109,7 @@ management.endpoint.health.group.application.show-details=always
 
 - Add the following dependencies to the **pom.xml**
 
-```
+```xml
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -126,7 +135,7 @@ management.endpoint.health.group.application.show-details=always
 
 - Add custom HealthIndicator bean
 
-```
+```java
 package demo.springbootactuator;
 
 import org.springframework.boot.actuate.health.Health;
