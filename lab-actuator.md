@@ -3,13 +3,19 @@
 You can start with any Web application of your choice.
 In the instruction below, **demo-spring-boot-actuator** is used.
 
-### Make sure spring-boot-starter-actuator dependency is added to the pom.xml
+### Make sure spring-boot-starter-actuator is added to the pom.xml
 
 ```
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+```
+
+### Make sure you expose all endpoints - in the application.properties
+
+```
+management.endpoints.web.exposure.include=*
 ```
 
 ### Get build information
@@ -46,6 +52,15 @@ In the instruction below, **demo-spring-boot-actuator** is used.
 - Rerun the application
 - Access [http://localhost:8080/actuator/info](http://localhost:8080/actuator/info)
 
+- Add custom info - add the following to the application.properties file
+
+```
+info.training.location=Remote
+info.training.instructor=Sang Shin
+```
+
+- Rerun the application
+- Access [http://localhost:8080/actuator/info](http://localhost:8080/actuator/info)
 
 ### Change logging level
 
@@ -66,7 +81,8 @@ public class HelloController {
     @Value("${name:dummyName}")
     private String name;
 
-    private final Logger logger = LoggerFactory.getLogger(getClass());
+    private final Logger logger 
+        = LoggerFactory.getLogger(getClass());
 
     @GetMapping("/hello")
     public String hello() {
@@ -78,7 +94,7 @@ public class HelloController {
 ```
 
 - Rerun the application
-- Access the current logging level by sending HTTP GET request
+- Access the current logging level by sending HTTP GET request (You can use a browser for this)
 
 ```
 curl -H"Accept: application/json" localhost:8080/actuator/loggers/demo.springbootactuator
@@ -86,7 +102,7 @@ curl -H"Accept: application/json" localhost:8080/actuator/loggers/demo.springboo
 
 - Access [http://localhost:8080/hello](http://localhost:8080/hello) and observe only INFO message is displayed
 
-- Change the logging level of **demo.springbootactuator** package by sending HTTP post  (You can use Postman if you don't have curl)
+- Change the logging level of **demo.springbootactuator** package (or whatever package of your choice) by sending HTTP post  (You can use Postman if you don't have "curl")
 
 ```
 curl -i -XPOST -H"Content-Type: application/json" localhost:8080/actuator/loggers/demo.springbootactuator -d'{"configuredLevel": "DEBUG"}'
@@ -129,7 +145,7 @@ management.endpoint.health.group.application.show-details=always
 - Access [http://localhost:8080/actuator/health/system](http://localhost:8080/health/system)
 - Start and stop the MongoDB server and check the health status
 
-- For your own exercise, see if you can add things to the project to see the health status of Cassandra 
+- For your own exercise, see if you can add things to the project to see the health status of **Cassandra**
 
 ### Display Custom Health information
 
