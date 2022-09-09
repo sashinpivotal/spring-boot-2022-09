@@ -168,7 +168,7 @@ management.endpoint.health.show-details=always
 
 - Refresh Maven in IntelliJ
 - Rerun the application
-- Access [http://localhost:8080/actuator/health/system](http://localhost:8080/health/system)
+- Access [http://localhost:8080/actuator/health/system](http://localhost:8080/actuator/health/system)
 - Start and stop the MongoDB server and check the health status
 
 - For your own exercise, see if you can add things to the project to see the health status of **Cassandra**
