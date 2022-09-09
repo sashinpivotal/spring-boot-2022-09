@@ -203,7 +203,9 @@ public CommandLineRunner commandLineRunner(
 
 ### Quiz 
 
-
+- What is @Profile annotation for?
+- What is the Spring Boot environment variable to set in order to choose a set of active profiles?
+- What are **CommandLineRunner* beans for?
 
 ### Topics/Labs of Day 3
 
@@ -251,7 +253,7 @@ public CommandLineRunner commandLineRunner(
 
 - Execute "mvn package"
 - Rerun the application
-- Access http://localhost:8080/actuator/info
+- Access [http://localhost:8080/actuator/info](http://localhost:8080/actuator/info)
 
 
 ### Change logging level
@@ -285,7 +287,7 @@ public class HelloController {
 ```
 
 - Re-run the application
-- Access the current logging level
+- Access the current logging level by sending HTTP GET request
 
 ```
 curl -H"Accept: application/json" localhost:8080/actuator/loggers/demo.springbootactuator
@@ -293,7 +295,7 @@ curl -H"Accept: application/json" localhost:8080/actuator/loggers/demo.springboo
 
 - Access [http://localhost:8080/hello](http://localhost:8080/hello) and observe only INFO message is displayed
 
-- Change the logging level of **demo.springbootactuator** package by sending HTTP post message
+- Change the logging level of **demo.springbootactuator** package by sending HTTP post  (You can use Postman if you don't have curl)
 
 ```
 curl -i -XPOST -H"Content-Type: application/json" localhost:8080/actuator/loggers/demo.springbootactuator -d'{"configuredLevel": "DEBUG"}'
@@ -306,7 +308,7 @@ curl -i -XPOST -H"Content-Type: application/json" localhost:8080/actuator/logger
 - Add the following to the "application.properties"
 
 ```
-management.endpoint.health.group.system.include=diskSpace,db,mongodb
+management.endpoint.health.group.system.include=diskSpace,db,mongo
 management.endpoint.health.group.system.show-details=always
 management.endpoint.health.group.web.include=ping
 management.endpoint.health.group.application.include=customHealthCheck
@@ -324,15 +326,19 @@ management.endpoint.health.group.application.show-details=always
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
 ```
 
-- Refresh Maven
+- Refresh Maven in IntelliJ
 - Rerun the application
 - Access [http://localhost:8080/actuator/health/system](http://localhost:8080/health/system)
 
 ### Display Custom Health information
 
-- Add the following bean
+- Add custom HealthIndicator bean
 
 ```
 package demo.springbootactuator;
