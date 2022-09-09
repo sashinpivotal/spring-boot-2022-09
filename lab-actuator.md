@@ -213,7 +213,7 @@ public class CustomHealthCheck implements HealthIndicator {
 
 ### (If you have extra time)
 
-- Add your own custom actuator endpoint
+- Add your own custom actuator endpoint - see [related document](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints.implementing-custom)
 
 - Try [Prometheus and Grafana](https://www.callicoder.com/spring-boot-actuator-metrics-monitoring-dashboard-prometheus-grafana/)
 
