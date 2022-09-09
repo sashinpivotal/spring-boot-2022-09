@@ -204,10 +204,23 @@ public class CustomHealthCheck implements HealthIndicator {
         counter.increment();   // increment the counter
         logger.info("--->INFO message");
         logger.debug("--->DEBUG message");
-        return "hello " + name + " called " + counter.count();
+        return "hello " + name + " called " + counter.count() + " times";
     }
 ```
 
 - Access [http://localhost:8080/hello](http://localhost:8080/hello) a few times
 - Access [http://localhost:8080/actuator/metrics/hello.counter](http://localhost:8080/actuator/metrics/hello.counter)
 
+### (If you have extra time)
+
+- Try [Prometheus and Grafana](https://www.callicoder.com/spring-boot-actuator-metrics-monitoring-dashboard-prometheus-grafana/)
+
+- You will need to install Docker first before you try this lab. (If you have not, download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/))
+
+- When running Prometheus, please make sure to use the absolute path to the local prometheus.yml file as shown below.
+
+```
+docker run -d --name=prometheus -p 9090:9090 -v /Users/sangshin/SpringBootDev/Demos/demo-spring-boot-actuator/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml
+```
+
+- When running Grafana, the default username/password is admin/admin
