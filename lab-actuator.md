@@ -122,6 +122,25 @@ management.endpoint.health.group.web.include=ping
 management.endpoint.health.group.application.include=customHealthCheck
 management.endpoint.health.group.application.show-details=always
 ```
+or to the "application.yml" (Thanks to Ron Bets)
+
+```
+management:
+  endpoint:
+    health:
+      group:
+        system:
+          include: diskSpace,db,mongo
+          show-details: always
+          show-components: always
+        application:
+          include: customHealthCheck
+          show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+```
 
 - Add the following dependencies to the **pom.xml**
 
