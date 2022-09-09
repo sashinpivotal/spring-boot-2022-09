@@ -219,7 +219,7 @@ public class CustomHealthCheck implements HealthIndicator {
 ```
 
 - Re-run the application
-- Access [http://localhost:8080/actuator/health/application](http://localhost:8080/health/application)
+- Access [http://localhost:8080/actuator/health/application](http://localhost:8080/actuator/health/application)
 
 - For your own exercise, add another custom health indicator to check if the **name** property displays your name or not.  If it does, display "UP", otherwise display "DOWN"
 
