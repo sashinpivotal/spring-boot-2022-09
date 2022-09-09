@@ -122,6 +122,7 @@ management.endpoint.health.group.web.include=ping
 management.endpoint.health.group.application.include=customHealthCheck
 management.endpoint.health.group.application.show-details=always
 ```
+
 or to the "application.yml" (Thanks to Ron Bets)
 
 ```
@@ -140,6 +141,12 @@ management:
     web:
       exposure:
         include: '*'
+```
+
+If you are experiencing some issue with the above setting, use the following:
+
+```
+management.endpoint.health.show-details=always
 ```
 
 - Add the following dependencies to the **pom.xml**
@@ -165,6 +172,19 @@ management:
 - Start and stop the MongoDB server and check the health status
 
 - For your own exercise, see if you can add things to the project to see the health status of **Cassandra**
+
+### Instruction on how to install/run MongoDB
+
+- [Installing MongoDB community version](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#installing-mongodb-6.0-edition-edition)
+
+- [Running MongoDB](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#run-mongodb-community-edition)
+
+- Running podman
+
+```
+docker run --name mongodb -d -p 27017:27017 mongo
+```
+
 
 ### Display Custom Health information
 
