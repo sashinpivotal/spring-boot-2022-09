@@ -94,7 +94,7 @@ public class HelloController {
 ```
 
 - Rerun the application
-- Access the current logging level by sending HTTP GET request (You can use a browser for this)
+- Access the current logging level of package of your choice (in the example below, it is "demo.springbootactuator") by sending HTTP GET request (You can use a browser for this)
 
 ```
 curl -H"Accept: application/json" localhost:8080/actuator/loggers/demo.springbootactuator
@@ -102,7 +102,7 @@ curl -H"Accept: application/json" localhost:8080/actuator/loggers/demo.springboo
 
 - Access [http://localhost:8080/hello](http://localhost:8080/hello) and observe only INFO message is displayed
 
-- Change the logging level of **demo.springbootactuator** package (or whatever package of your choice) by sending HTTP post  (You can use Postman if you don't have "curl")
+- Change the logging level of of package of your choice (in the example below, it is "demo.springbootactuator") by sending HTTP post  (You can use Postman if you don't have "curl")
 
 ```
 curl -i -XPOST -H"Content-Type: application/json" localhost:8080/actuator/loggers/demo.springbootactuator -d'{"configuredLevel": "DEBUG"}'
@@ -212,6 +212,8 @@ public class CustomHealthCheck implements HealthIndicator {
 - Access [http://localhost:8080/actuator/metrics/hello.counter](http://localhost:8080/actuator/metrics/hello.counter)
 
 ### (If you have extra time)
+
+- Add your own custom actuator endpoint
 
 - Try [Prometheus and Grafana](https://www.callicoder.com/spring-boot-actuator-metrics-monitoring-dashboard-prometheus-grafana/)
 
