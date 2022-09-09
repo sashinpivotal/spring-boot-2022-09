@@ -184,3 +184,30 @@ public class CustomHealthCheck implements HealthIndicator {
 
 - For your own exercise, add another custom health indicator to check if the **name** property displays your name or not.  If it does, display "UP", otherwise display "DOWN"
 
+### Add custom counter
+
+- Add the following code to the HelloController
+
+```java
+    private Counter counter;
+
+    public HelloController(MeterRegistry meterRegistry) {
+        this.counter = meterRegistry.counter("hello.counter");
+    }
+```
+
+- Modify the hello() method as following
+
+```java
+    @GetMapping("/hello")
+    public String hello() {
+        counter.increment();   // increment the counter
+        logger.info("--->INFO message");
+        logger.debug("--->DEBUG message");
+        return "hello " + name + " called " + counter.count();
+    }
+```
+
+- Access [http://localhost:8080/hello](http://localhost:8080/hello) a few times
+- Access [http://localhost:8080/actuator/metrics/hello.counter](http://localhost:8080/actuator/metrics/hello.counter)
+
