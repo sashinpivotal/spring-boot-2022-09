@@ -1,8 +1,11 @@
 ## Extra Actuator lab
 
+You can start with any Web application of your choice.
+In the instruction below, **demo-spring-boot-actuator** is used.
+
 ### Get build information
 
-- Add the following to the **pom.xml** to get the build info
+- Add the **executions** element to the **spring-boot-maven-plugin** plugin as following: (This is to get some build information)
 
 ```
     <build>
@@ -30,7 +33,7 @@
     </build>
 ```
 
-- Execute "mvn package"
+- Execute "mvn package" and make sure "target/classes/META-INF/build-info.properties" file gets created
 - Rerun the application
 - Access [http://localhost:8080/actuator/info](http://localhost:8080/actuator/info)
 
@@ -65,7 +68,7 @@ public class HelloController {
 }
 ```
 
-- Re-run the application
+- Rerun the application
 - Access the current logging level by sending HTTP GET request
 
 ```
@@ -81,6 +84,7 @@ curl -i -XPOST -H"Content-Type: application/json" localhost:8080/actuator/logger
 ```
 
 - Access [http://localhost:8080/hello](http://localhost:8080/hello) and observe that both INFO and DEBUG messages are displayed
+- Change the logging level back to "INFO" and access the above URL again
 
 ### Display System Health information
 
@@ -114,6 +118,9 @@ management.endpoint.health.group.application.show-details=always
 - Refresh Maven in IntelliJ
 - Rerun the application
 - Access [http://localhost:8080/actuator/health/system](http://localhost:8080/health/system)
+- Start and stop the MongoDB server and check the health status
+
+- For your own exercise, see if you can add things to the project to see the health status of Cassandra 
 
 ### Display Custom Health information
 
@@ -149,4 +156,6 @@ public class CustomHealthCheck implements HealthIndicator {
 
 - Re-run the application
 - Access [http://localhost:8080/actuator/health/application](http://localhost:8080/health/application)
+
+- For your own exercise, add another custom health indicator to check if the **name** property displays your name or not.  If it does, display "UP", otherwise display "DOWN"
 
