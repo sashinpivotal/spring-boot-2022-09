@@ -224,17 +224,69 @@ public CommandLineRunner commandLineRunner(
 ### Topics/Labs
 
 - REST Services
-  - slides:
-  - lab: page 17-19 of spring_boot_exercise_instructions.pdf
+  - slides: pages 191-214 of Spring_Boot_Slides.pdf
+  - demo: demo-rest-services
+  - lab: pages 17-19 of spring_boot_exercise_instructions.pdf
+  - lab-solution: solution-rest1
 
 - Going Further with REST Services
-  - slides:
-  - lab: page 20-21 of spring_boot_exercise_instructions.pdf
+  - slides: pages of 215-244 of Spring_Boot_Slides.pdf
+  - demo: demo-rest-services
+  - lab: pages 20-21 of spring_boot_exercise_instructions.pdf
+  - lab-solution: solution-rest2
 
-# Day 7 (or Day 8) project
+- (If we have time) Introduction of HATEOAS
+  - slides: pages of 454-473 of Spring_Boot_Slides.pdf
+  - demo: demo-hateoas
+  - lab: No lab exercise in spring_boot_exercise_instructions.pdf
+
+## Day 6 
+
+### Topics/Labs
+
+- Spring Data Access
+  - slides: pages 245-281 of Spring_Boot_Slides.pdf
+  - demo: demo-spring-data
+  - lab: page 22-25 of spring_boot_exercise_instructions.pdf
+  - lab-solution: solution-spring-data
+
+- Spring Data Access with MongoDB
+  - slides: pages 282-297 of Spring_Boot_Slides.pdf
+  - demo: demo-spring-data-mongodb
+  - lab: No lab exercise in spring_boot_exercise_instructions.pdf
+
+- (If we have time) JPA Association
+  - slides: pages xxx-xxx of Spring_Boot_Slides.pdf
+
+## Day 7
+
+### Topics/Labs
+
+- Testing with Spring Boot
+  - slides: page 336-362 of Spring_Boot_Slides.pdf
+  - demo: demo-spring-boot-testing
+  - lab: Add testing to the "online retailer" app 
+  - lab-solution: solution-spring-boot-testing
+
+- Unit Testing with JUnit 5
+  - slides: pages 474-510 of Spring_Boot_Slides.pdf
+  - lab: There is no lab in spring_boot_exercise_instructions.pdf
+
+- [TDD unit testing lab](https://github.com/sashinpivotal/spring-boot-tdd)
+
+## Day 8
+
+- Aspect-Oriented Programming
+  - slides: page 511-529 of Spring_Boot_Slides.pdf
+  - demo: demo-aop
+  - lab: page 47-48 of spring_boot_exercise_instructions.pdf
+  - lab-solution: solution-aop
+
+
+## Final project
 
 Please work on the following project.
 
-- [project](./spring_project.pdf)
+- [final project](./spring_project.pdf)
 
-- Make sure you do unit testing (using **MockMvc**) and integration testing (using **TestRestTemplate**) on the controller layer
+
