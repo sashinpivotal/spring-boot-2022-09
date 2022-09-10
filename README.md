@@ -256,7 +256,9 @@ public CommandLineRunner commandLineRunner(
   - lab: No lab exercise in spring_boot_exercise_instructions.pdf
 
 - (If we have time) JPA Association
-  - slides: pages xxx-xxx of Spring_Boot_Slides.pdf
+  - slides: pages 576-608 of Spring_Boot_Slides.pdf
+  - demo: jpa-association
+  - lab: No lab exercise in spring_boot_exercise_instructions.pdf
 
 ## Day 7
 
@@ -281,7 +283,6 @@ public CommandLineRunner commandLineRunner(
   - demo: demo-aop
   - lab: page 47-48 of spring_boot_exercise_instructions.pdf
   - lab-solution: solution-aop
-
 
 ## Final project
 
