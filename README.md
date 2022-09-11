@@ -221,6 +221,14 @@ public CommandLineRunner commandLineRunner(
 
 ## Day 5 
 
+### Quiz
+
+- What is Spring Boot annotation that enables auto-configuration?
+- What is "spring.factories" file for?
+- What is "@ConditionalOnMissingBean" for?
+- What are 3 different ways of resolving bean ambiguity exception?
+- What is bean definition overloading?
+
 ### Topics/Labs
 
 - REST Services
@@ -231,7 +239,7 @@ public CommandLineRunner commandLineRunner(
 
 - Going Further with REST Services
   - slides: pages of 215-244 of Spring_Boot_Slides.pdf
-  - demo: demo-rest-services
+  - demo: demo-rest-services, demo-rest-clients
   - lab: pages 20-21 of spring_boot_exercise_instructions.pdf
   - lab-solution: solution-rest2
 
@@ -239,6 +247,7 @@ public CommandLineRunner commandLineRunner(
   - slides: pages of 454-473 of Spring_Boot_Slides.pdf
   - demo: demo-hateoas
   - lab: No lab exercise in spring_boot_exercise_instructions.pdf
+  - [lab](https://www.baeldung.com/spring-hateoas-tutorial)
 
 ## Day 6 
 
@@ -272,11 +281,14 @@ public CommandLineRunner commandLineRunner(
 
 - Unit Testing with JUnit 5
   - slides: pages 474-510 of Spring_Boot_Slides.pdf
+  - demo: demo-junit5
   - lab: There is no lab in spring_boot_exercise_instructions.pdf
 
 - [TDD unit testing lab](https://github.com/sashinpivotal/spring-boot-tdd)
 
 ## Day 8
+
+### Topics/Labs
 
 - Aspect-Oriented Programming
   - slides: page 511-529 of Spring_Boot_Slides.pdf
@@ -284,9 +296,12 @@ public CommandLineRunner commandLineRunner(
   - lab: page 47-48 of spring_boot_exercise_instructions.pdf
   - lab-solution: solution-aop
 
-## Final project
-
-Please work on the following project.
+- Messaging with Kafka
+  - slides: page 609-627 of Spring_Boot_Slides.pdf
+  - demo: demo-kafka
+  - lab: There is no lab in spring_boot_exercise_instructions.pdf
+ 
+## (If we have time) Final project 
 
 - [final project](./spring_project.pdf)
 
