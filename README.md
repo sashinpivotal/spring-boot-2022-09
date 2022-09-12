@@ -253,6 +253,27 @@ public CommandLineRunner commandLineRunner(
   - [lab - from Baeldung](https://www.baeldung.com/spring-hateoas-tutorial)
   - Refactor "CartRestController" from the end result of the lab of "Going Further with REST Services" topic above to add HATEOAS support
 
+### Misc
+
+- Code for generating URI (for the purposed of setting "location" response header)
+
+```java
+	private ResponseEntity<Void> entityWithLocation(Object resourceId) {
+
+		// Determines URL of child resource based on the full URL of the given
+		// request, appending the path info with the given resource Identifier
+		URI location = ServletUriComponentsBuilder
+				.fromCurrentRequestUri()
+				.path("/{resourceId}")
+				.buildAndExpand(resourceId)
+				.toUri();
+
+		// Return an HttpEntity object - it will be used to build the
+		// HttpServletResponse
+		return ResponseEntity.created(location).build();
+	}
+```
+
 ## Day 6 
 
 ### Topics/Labs
