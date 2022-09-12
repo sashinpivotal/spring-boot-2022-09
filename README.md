@@ -298,7 +298,7 @@ public CommandLineRunner commandLineRunner(
   - lab-solution: solution-aop
 
 - Deploying Spring Boot App over Kubernetes
-  - [lab](https://tanzu.vmware.com/developer/workshop-live?ws=aHR0cHM6Ly9lZHVjYXRlcy1sYWJzLXVpLnRkYy1wcm9kLTRmOTAxNjQudGFuenUtbGFicy5lc3Audm13YXJlLmNvbS93b3Jrc2hvcHMvc2Vzc2lvbi9lZHVjYXRlcy1sYWJzLXcwNy1zMDY1L2FjdGl2YXRlLz90b2tlbj1OdmhzVGQ2b0VWRzh3SmwyWmlRYmtyV1MwMUxBWXA5YyZpbmRleF91cmw9aHR0cHMlM0ElMkYlMkZ0YW56dS52bXdhcmUuY29tJTJGZGV2ZWxvcGVyJTJGd29ya3Nob3Bz)
+  - [Spring Boot on Kubernetes lab](https://tanzu.vmware.com/developer/workshops/) - Choose "Spring Boot on Kubernetes" 
 
 - (If we have time) Messaging with Kafka
   - slides: page 609-627 of Spring_Boot_Slides.pdf
