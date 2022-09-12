@@ -276,6 +276,14 @@ public CommandLineRunner commandLineRunner(
 
 ## Day 6 
 
+### Quiz
+
+- What are the characteristics of REST?
+- What is @ResponseBody annotation for?
+- What is @RequestBody annotation for?
+- What is @PathVariable annotation for?
+- What is @RequestParam annotation for?
+
 ### Topics/Labs
 
 - Spring Data Access
