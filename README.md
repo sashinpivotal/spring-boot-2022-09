@@ -122,7 +122,7 @@ I could not locate Windows version :-) If you can share what you found, that wil
 
 You can implement your own BeanPostProcessor bean, which gets called after each bean gets created, as following:
 
-```
+```java
    @Component
 public class MyBeanPostProcessor implements BeanPostProcessor {
 
@@ -178,7 +178,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 
 - CommandLineRunner bean (this is not covered in the course contents) - Example code
 
-```
+```java
 @Bean
 public CommandLineRunner commandLineRunner(
   @Qualifier("bankService1") BankService bankService1,
@@ -227,7 +227,7 @@ public CommandLineRunner commandLineRunner(
 - What is "spring.factories" file for?
 - What is "@ConditionalOnMissingBean" for?
 - What are 3 different ways of resolving bean ambiguity exception?
-- What is bean definition overloading?
+- What is bean definition overloading?  How is it different from ambiguity situation?
 
 ### Topics/Labs
 
@@ -247,7 +247,8 @@ public CommandLineRunner commandLineRunner(
   - slides: pages of 454-473 of Spring_Boot_Slides.pdf
   - demo: demo-hateoas
   - lab: No lab exercise in spring_boot_exercise_instructions.pdf
-  - [lab](https://www.baeldung.com/spring-hateoas-tutorial)
+  - [lab - from Baeldung](https://www.baeldung.com/spring-hateoas-tutorial)
+  - Refactor "CartRestController" from the end result of the lab of "Going Further with REST Services" topic above to add HATEOAS support
 
 ## Day 6 
 
@@ -277,7 +278,7 @@ public CommandLineRunner commandLineRunner(
   - slides: page 336-362 of Spring_Boot_Slides.pdf
   - demo: demo-spring-boot-testing
   - lab: Add testing to the "online retailer" app 
-  - lab-solution: solution-spring-boot-testing
+  - lab-solution: solution-spring-boot-testing (unfortunately there is no solution code)
 
 - Unit Testing with JUnit 5
   - slides: pages 474-510 of Spring_Boot_Slides.pdf
@@ -290,16 +291,25 @@ public CommandLineRunner commandLineRunner(
 
 ### Topics/Labs
 
-- Aspect-Oriented Programming
+- Aspect-Oriented Programming (AOP)
   - slides: page 511-529 of Spring_Boot_Slides.pdf
   - demo: demo-aop
   - lab: page 47-48 of spring_boot_exercise_instructions.pdf
   - lab-solution: solution-aop
 
-- Messaging with Kafka
+- Deploying Spring Boot App over Kubernetes
+  - [lab](https://tanzu.vmware.com/developer/workshop-live?ws=aHR0cHM6Ly9lZHVjYXRlcy1sYWJzLXVpLnRkYy1wcm9kLTRmOTAxNjQudGFuenUtbGFicy5lc3Audm13YXJlLmNvbS93b3Jrc2hvcHMvc2Vzc2lvbi9lZHVjYXRlcy1sYWJzLXcwNy1zMDY1L2FjdGl2YXRlLz90b2tlbj1OdmhzVGQ2b0VWRzh3SmwyWmlRYmtyV1MwMUxBWXA5YyZpbmRleF91cmw9aHR0cHMlM0ElMkYlMkZ0YW56dS52bXdhcmUuY29tJTJGZGV2ZWxvcGVyJTJGd29ya3Nob3Bz)
+
+- (If we have time) Messaging with Kafka
   - slides: page 609-627 of Spring_Boot_Slides.pdf
   - demo: demo-kafka
   - lab: There is no lab in spring_boot_exercise_instructions.pdf
+
+- (If we have time) Spring security
+  - slides: page 374-401 of Spring_Boot_Slides.pdf
+  - demo: demo-spring-boot-security
+  - lab: There is no lab in spring_boot_exercise_instructions.pdf
+
  
 ## (If we have time) Final project 
 
