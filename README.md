@@ -223,6 +223,9 @@ public CommandLineRunner commandLineRunner(
 
 ### Quiz
 
+- What are the two actuator endpoints that are exposed by default?
+- What is the difference between **configuredLevel** vs **effectiveLevel** logging levels at the **actuator/loggers** endpoint?
+  
 - What is Spring Boot annotation that enables auto-configuration?
 - What is "spring.factories" file for?
 - What is "@ConditionalOnMissingBean" for?
