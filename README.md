@@ -297,7 +297,7 @@ public CommandLineRunner commandLineRunner(
   - demo: demo-spring-data-mongodb
   - lab: No lab exercise in spring_boot_exercise_instructions.pdf
 
-- (If we have time) JPA Association
+- JPA Association - we will cover just 1-Many relationship
   - slides: pages 576-608 of Spring_Boot_Slides.pdf
   - demo: jpa-association
   - lab: No lab exercise in spring_boot_exercise_instructions.pdf
