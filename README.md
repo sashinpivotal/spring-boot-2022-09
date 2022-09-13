@@ -274,6 +274,12 @@ public CommandLineRunner commandLineRunner(
 	}
 ```
 
+- [jarscan utility](https://jarscan.com/)
+
+```
+java -jar ~/javatools/jarscan.jar -class SomeClass
+```
+
 ## Day 6 
 
 ### Quiz
@@ -283,6 +289,8 @@ public CommandLineRunner commandLineRunner(
 - What is @RequestBody annotation for?
 - What is @PathVariable annotation for?
 - What is @RequestParam annotation for?
+- What are the two things that are recommended to be set in the response headers for HTTP POST used for adding a resource item?
+- What is the JDK provided-command that display all Java processes?
 
 ### Topics/Labs
 
