@@ -316,6 +316,11 @@ function jarscan(){
   - demo: jpa-association
   - lab: No lab exercise in spring_boot_exercise_instructions.pdf
 
+### Misc
+
+- [Domain-driven design with relational database using Spring Data JDBC](https://www.youtube.com/watch?v=GOSW911Ox6s&ab_channel=SpringDeveloper)
+  - Talks about ORM complexities and how they can be addressed by **Spring Data JDBC**
+
 ## Day 7
 
 ### Topics/Labs
