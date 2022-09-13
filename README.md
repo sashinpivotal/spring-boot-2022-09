@@ -280,6 +280,12 @@ public CommandLineRunner commandLineRunner(
 java -jar ~/javatools/jarscan.jar -class SomeClass
 ```
 
+```
+function jarscan(){
+    java -jar ~/javatools/jarscan.jar -class "$1"
+}
+```
+
 ## Day 6 
 
 ### Quiz
