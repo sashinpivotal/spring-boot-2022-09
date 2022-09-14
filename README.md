@@ -376,4 +376,7 @@ function jarscan(){
 
 - [final project](./spring_project.pdf)
 
+## Topics we have not covered and resources
+
+- WebFlux
 
