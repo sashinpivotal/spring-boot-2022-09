@@ -307,11 +307,6 @@ function jarscan(){
   - lab: page 22-25 of spring_boot_exercise_instructions.pdf
   - lab-solution: solution-spring-data
 
-- Spring Data Access with MongoDB
-  - slides: pages 282-297 of Spring_Boot_Slides.pdf
-  - demo: demo-spring-data-mongodb
-  - lab: No lab exercise in spring_boot_exercise_instructions.pdf
-
 - JPA Association - we will cover just 1-Many relationship
   - slides: pages 576-608 of Spring_Boot_Slides.pdf
   - demo: jpa-association
@@ -323,6 +318,16 @@ function jarscan(){
   - Talks about ORM complexities and how they can be addressed by **Spring Data JDBC**
 
 ## Day 7
+
+### Quiz
+
+- Why you want to use JdbcTemplate over JDBC API?
+- What are the pros and cons of using the following 3 different persistence technologies?
+  - JdbcTemplate
+  - JPA
+  - Spring Data JPA
+- What are the examples of built-in repository interfaces supported by Spring Data?
+- When do you use @OneToMany annotation?
 
 ### Topics/Labs
 
@@ -343,6 +348,11 @@ function jarscan(){
 
 ### Topics/Labs
 
+- Spring Data Access with MongoDB
+  - slides: pages 282-297 of Spring_Boot_Slides.pdf
+  - demo: demo-spring-data-mongodb
+  - lab: No lab exercise in spring_boot_exercise_instructions.pdf
+
 - Aspect-Oriented Programming (AOP)
   - slides: page 511-529 of Spring_Boot_Slides.pdf
   - demo: demo-aop
@@ -355,11 +365,6 @@ function jarscan(){
 - (If we have time) Messaging with Kafka
   - slides: page 609-627 of Spring_Boot_Slides.pdf
   - demo: demo-kafka
-  - lab: There is no lab in spring_boot_exercise_instructions.pdf
-
-- (If we have time) Spring security
-  - slides: page 374-401 of Spring_Boot_Slides.pdf
-  - demo: demo-spring-boot-security
   - lab: There is no lab in spring_boot_exercise_instructions.pdf
 
  
