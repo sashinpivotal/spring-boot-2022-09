@@ -322,12 +322,15 @@ function jarscan(){
 ### Quiz
 
 - Why you want to use JdbcTemplate over JDBC API?
-- What are the pros and cons of using the following 3 different persistence technologies?
+- What are the pros and cons of using the following persistence technologies you can use in your Spring applications?
   - JdbcTemplate
   - JPA
   - Spring Data JPA
+  - Spring Data JDBC (we really have not talked about this in the class but it is a new kid on the block)
 - What are the examples of built-in repository interfaces supported by Spring Data?
-- When do you use @OneToMany annotation?
+- When do you use "@OneToMany" annotation?
+- What is the @JoinColumn annotation for?
+- When do you use "mappedby" attribute in  "@OneToMany" annotation?
 
 ### Topics/Labs
 
