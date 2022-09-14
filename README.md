@@ -348,7 +348,20 @@ function jarscan(){
 
 - [TDD unit testing lab](https://github.com/sashinpivotal/spring-boot-tdd)
 
+### Misc
+
+- [@ActiveProfiles Example in Spring Test](https://www.concretepage.com/spring-5/activeprofiles-example-spring-test)
+
 ## Day 8
+
+### Quiz
+
+- What are the differences between "RestTemplate" and "TestRestTemplate"?
+- What is the configuration behavior through "@SpringBootTest"?
+
+### Evaluation of the training
+
+- Please do [Training evaluation](https://tinyurl.com/5a798f8n)
 
 ### Topics/Labs
 
