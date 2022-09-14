@@ -379,4 +379,6 @@ function jarscan(){
 ## Topics we have not covered and resources
 
 - WebFlux
+  - [Web on Reactive Stack](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html)
+  - [Guide to Spring 5 WebFlux](https://www.baeldung.com/spring-webflux)
 
