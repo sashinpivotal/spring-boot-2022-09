@@ -316,6 +316,7 @@ function jarscan(){
 
 - [Domain-driven design with relational database using Spring Data JDBC](https://www.youtube.com/watch?v=GOSW911Ox6s&ab_channel=SpringDeveloper)
   - Talks about ORM complexities and how they can be addressed by **Spring Data JDBC**
+- [Spring Data finder naming convention](https://www.baeldung.com/spring-data-derived-queries)
 
 ## Day 7
 
