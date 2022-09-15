@@ -124,23 +124,23 @@ I could not locate Windows version :-) If you can share what you found, that wil
 You can implement your own BeanPostProcessor bean, which gets called after each bean gets created, as following:
 
 ```java
-   @Component
+@Component
 public class MyBeanPostProcessor implements BeanPostProcessor {
 
-    private final Logger logger = LoggerFactory.getLogger(getClass());
+  private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Nullable
-    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        logger.info("---> before " + bean.getClass());
-        return bean;
-    }
+  @Nullable
+  public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+      logger.info("---> before " + bean.getClass());
+      return bean;
+  }
 
-    @Nullable
-    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        logger.info("---> after");
-        return bean;
-    }
-   }
+  @Nullable
+  public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+      logger.info("---> after");
+      return bean;
+  }
+}
 ```
 
 2. What are the pros and cons of the two schemes of defining Spring Beans?
@@ -357,7 +357,9 @@ function jarscan(){
 ### Quiz
 
 - What are the differences between "RestTemplate" and "TestRestTemplate"?
-- What is the configuration behavior through "@SpringBootTest"?
+- What is the testing configuration behavior through "@SpringBootTest"?
+- How is "@SpringBootConfiguration" used?
+- What is "@ContextConfiguration" annotation for?
 
 ### Evaluation of the training
 
