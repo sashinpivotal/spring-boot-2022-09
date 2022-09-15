@@ -360,12 +360,13 @@ function jarscan(){
 - What is the testing configuration behavior through "@SpringBootTest"?
 - How is "@SpringBootConfiguration" used?
 - What is "@ContextConfiguration" annotation for?
-- Between the following two choices of creating test application context, which one would you like to use for wha situation?
+- Between the following two choices of creating application context for your testing, which one would you like to use for what situation?
   - use of @SpringBootTest
-  - use if @ContextConfiguration (with @ExtendWith)
+  - use of @ContextConfiguration (with @ExtendWith)
 
-### Evaluation of the training
+### Attendance check and Evaluation of the training
 
+- Make sure you [log your attendance](https://netorgft4394772-my.sharepoint.com/:x:/g/personal/cc_en-lighten_io/EQmgmw5zAvFKn2qeteGkZHQB9Mzc-3d4Ad6RFYS3VjL0SA?rtime=9P-17SGX2kg)
 - Please do [Training evaluation](https://tinyurl.com/5a798f8n)
 
 ### Topics/Labs
