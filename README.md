@@ -386,6 +386,7 @@ function jarscan(){
   - [Spring Boot on Kubernetes lab](https://tanzu.vmware.com/developer/workshops/) - Choose "Spring Boot on Kubernetes" 
 
 - Messaging with Kafka
+  - [Quick start on Kafka](https://developer.confluent.io/quickstart/kafka-docker/)
   - slides: page 609-627 of Spring_Boot_Slides.pdf
   - demo: demo-kafka
   - lab: There is no lab in spring_boot_exercise_instructions.pdf
